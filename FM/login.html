@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/54b9571404.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Cadastro.html">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #003061;
+    font-family: Arial, sans-serif;
+}
+.title{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.ponto{
+    font-size: 10px;
+    width: 3px;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35%;
+    height: 100%;
+    max-height: 50%;
+    background: #0e0d0d;
+    border-radius: 17px;
+    padding: 20px;
+}
+.login-container:hover{
+    box-shadow: 0 24px 48px rgba(12, 13, 12, 0.3);
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.input-grupo {
+    margin-bottom: 15px;
+}
+
+.input-grupo label {
+    padding: 5px;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input-grupo input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 3px solid #004b96;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #0a0101;
+    transition: 0.3s ease all;
+}
+
+.input-grupo input:focus {
+    border-color: #004b96;
+    background: #fff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background:#0056b3;
+}
+
+.text-2{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    margin-top: 15px;
+    font: 7px;
+}
+.text-2 a{
+    color: #0056b3;
+}
+
+.text-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.fa-brands.fa-google{
+    color:#004b96;
+    padding: 10px;
+    margin: 10px;
+    font-size:  30px;
+    cursor: pointer;
+}
+.fa-brands.fa-facebook-f{
+    color: #004b96;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.fa-brands.fa-github{
+    color: #004b96;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+.icones{
+    margin-top: 5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+           <div class="title"> FAÇA SEU LOGIN <span class="ponto">🔵</span></div> 
+            <form action="#">
+
+                <div class="input-grupo">
+                    <label for="username">E-mail</label>
+                    <input type="email" id="username" name="username" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-grupo">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+                
+                <div class="text-2">
+                    <p>Não tem login?<a href="Cadastro.html"> Cadastre-se</a></p>
+                </div>
+                <div class="text-3">
+                    <p>Entrar com</p>
+                </div>
+                <div class="icones">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
